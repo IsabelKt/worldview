@@ -58,12 +58,7 @@ class App extends Component {
         <Router>
           <div>
           <NavBar 
-            navLogin={!this.state.authenticated ?"login":null}
-            navSignin={!this.state.authenticated ?"SignUp":null}
-            navOut = {!this.state.authenticated? null:"Log Out"}
-            navP = {!this.state.authenticated? null:"Profile"}
-            navF = {!this.state.authenticated? null:"Friends"}
-            navM = {!this.state.authenticated? null:"Map"}
+            nav={this.state.authenticated}
             handleLogOut={this.handleLogOut}
             />
             <Switch>

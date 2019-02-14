@@ -2,10 +2,31 @@
     margin-left: 100px;
 } 
 .navbar{
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    border-radius: 25px;
     margin-left: -50px;
     padding: 11px;
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
 }
 .bg-dark {
     background-color: #22aade!important;
 }
 
+img{
+    height: 67px;
+    width: 245px;
+    margin-left: -20px;
+}
+h3{
+    font-family: "Catamaran", sans-serif;
+    margin-top:13px;
+    font-size: 25px;
+}
+.nav-item.logout{
+    margin-left: -38px;
+    margin-top: 5px;
+} 

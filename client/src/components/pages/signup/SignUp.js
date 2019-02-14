@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import "./style.css";
+import logo2wv from '../logo2wv.png';
 
 class SignUp extends Component {
   // Setting the component's initial state
@@ -76,11 +77,10 @@ class SignUp extends Component {
       <div>
       <div className="card">
       <div className="card-header"><h1>
-          Welcome
+          Welcome <img src={logo2wv} alt="" style={{width: "10%", height:"10%", marginLeft:"62%"}}/>
         </h1></div>
       <div className="card-body">
         <form className="form">
-        <br />
         <h2>Tell us about yourself:</h2>
           <input
             value={this.state.name}
@@ -169,8 +169,6 @@ class SignUp extends Component {
             type="url"
             placeholder="image"
           />
-          <br />
-          <br />
           <button className="btn btn-outline-primary btn-lg"  onClick={this.handleFormSubmit}>Submit</button>
         </form>
       </div>

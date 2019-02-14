@@ -49,7 +49,7 @@ class Login extends Component {
             <div className="col-md-4">
             </div>
             <div className="col-md-4 text-center">
-              <img src={logo} alt=""/>
+              <img className="image-logo" src={logo} alt=""/>
               <form className="login-form">
                 <input
                   className="form-control"

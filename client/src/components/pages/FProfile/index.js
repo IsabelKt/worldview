@@ -38,12 +38,10 @@ class FProfile extends React.Component {
           onClick={this.follow}
           disabled={this.state.results.quantity <= 0}
         >
-          Follow
-        </button>
+          <h3>Follow</h3>
+      </button>
       <div className="card-body">
-        <img alt={this.state.results.name} src={this.state.results.image} style={{width:"100%"}} />
-        <br />
-        <br />
+        <img className="img-profile" alt={this.state.results.name} src={this.state.results.image} style={{width:"100%", marginBottom:"50px", boxShadow: "0 3px 6px #999, 0 3px 6px #999"}} />
         <h2><strong>Name:</strong> {this.state.results.name}</h2>
         <h2><strong>Age:</strong> {this.state.results.age}</h2>
         <h2><strong>Country:</strong> {this.state.results.country}</h2>

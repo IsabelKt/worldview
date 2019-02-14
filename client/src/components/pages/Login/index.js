@@ -43,37 +43,38 @@ class Login extends Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col-md-4">
-          </div>
-          <div className="col-md-4 text-center" id="loginForm">
-            <img src={logo} alt=""/>
-            <form>
-              <input
-                className="form-control"
-                value={this.state.email}
-                name="email"
-                onChange={this.handleInputChange}
-                type="text"
-                placeholder="Email"
-              />
-              <input
-                className="form-control"
-                value={this.state.password}
-                name="password"
-                onChange={this.handleInputChange}
-                type="password"
-                placeholder="Password"
-              />
-              <button className="btn btn-lg btn-block" onClick={this.handleFormSubmit}>Submit</button>
-
-              <span>{this.state.error}</span>
-            </form>
-            <p class="mt-3"><small>Need an account? <a href="/signup">Create your account here.</a></small></p>
-            <p class="mt-5 mb-3 text muted"><a href="/">World View</a> &copy; 2019</p>
-          </div>
-          <div className="col-md-4">
+      <div>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-4">
+            </div>
+            <div className="col-md-4 text-center">
+              <img src={logo} alt=""/>
+              <form className="login-form">
+                <input
+                  className="form-control"
+                  value={this.state.email}
+                  name="email"
+                  onChange={this.handleInputChange}
+                  type="text"
+                  placeholder="Email"
+                />
+                <input
+                  className="form-control"
+                  value={this.state.password}
+                  name="password"
+                  onChange={this.handleInputChange}
+                  type="password"
+                  placeholder="Password"
+                />
+                <button className="btn btn-lg btn-block" onClick={this.handleFormSubmit}>Submit</button>
+                <span>{this.state.error}</span>
+              </form>
+              <p class="mt-3"><small>Need an account? <a href="/signup">Create your account here.</a></small></p>
+              <p class="mt-5 mb-3 text muted"><a href="/">World View</a> &copy; 2019</p>
+            </div>
+            <div className="col-md-4">
+            </div>
           </div>
         </div>
       </div>

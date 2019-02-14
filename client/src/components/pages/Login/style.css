@@ -1,4 +1,11 @@
 .btn {
-    background-color: #22aade
-};
+    color: white;
+    background-color: #22aade;
+}
 
+.login-form {
+    margin-top: 150px !important;
+}
+ img {
+     margin-top: 100px !important;
+ }

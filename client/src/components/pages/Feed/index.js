@@ -28,12 +28,12 @@ class Feed extends React.Component {
         height: "350px",
         width: "325px",
         position: "relative"}}>
-      <ul className="list-group" style={{listStyleType: "none", position: "relative", display:"inline", float: "left"}}>
+      <ul className="list-group" style={{listStyleType: "none", position: "relative", float: "left"}}>
         {
           this.state.results.map((User) => {
             // create a route-able link for each product
             return (
-              <li className="list-group-item" key={User._id} style={{ marginTop: "18px", boxShadow: "0 3px 6px #999, 0 3px 6px #999",position: "relative", display:"inline", float: "left"}}>
+              <li className="list-group-item" key={User._id} style={{ marginTop: "18px", boxShadow: "0 3px 6px #999, 0 3px 6px #999",position: "relative", float: "left"}}>
                 <div className="name-container"><center><Link to={`/fprofile/${User._id}`} className="name">{User.name}</Link></center></div>
                 <div className="img-container" style={{ height: "60%",
               overflow: "hidden",  textAlign: "center", background:"#6CADDC", boxShadow: "0 3px 6px #999, 0 3px 6px #999"}}>

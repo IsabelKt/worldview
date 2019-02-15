@@ -19,37 +19,36 @@ class Feed extends React.Component {
   
   render() {
     return(
-      <div>
+      <div className="container">
         <center><h1>Friends</h1></center>
-        <div className="content" 
+        <div className="content row" 
         style={{paddingLeft: "1rem",
         paddingRight: "1rem", 
         fontSize: "15px",
         height: "350px",
-        width: "325px",
         position: "relative"}}>
-      <ul className="list-group" style={{listStyleType: "none", position: "relative", display:"inline", float: "left"}}>
+      <div className="list-group" style={{listStyleType: "none", position: "relative", float: "left"}}>
         {
           this.state.results.map((User) => {
             // create a route-able link for each product
             return (
-              <li className="list-group-item" key={User._id} style={{ marginTop: "18px", boxShadow: "0 3px 6px #999, 0 3px 6px #999",position: "relative", display:"inline", float: "left"}}>
+              <div className="list-group-item" key={User._id} style={{ marginTop: "18px", boxShadow: "0 3px 6px #999, 0 3px 6px #999",position: "relative", float: "left"}}>
                 <div className="name-container"><center><Link to={`/fprofile/${User._id}`} className="name">{User.name}</Link></center></div>
                 <div className="img-container" style={{ height: "60%",
               overflow: "hidden",  textAlign: "center", background:"#6CADDC", boxShadow: "0 3px 6px #999, 0 3px 6px #999"}}>
               <img alt={User.name} src={User.image} style={{width: "100%"}}/>
               </div>
-                <p>Country: {User.country} </p>
-                <p>Age: {User.age} </p>
-                <p>Favorite food: {User.faveFood} </p>
-                <p>Favorite song: <a target="_blank" rel="noopener noreferrer" href={User.songLink}>{User.faveSong}</a> </p>
-                <p>Favorite Location: {User.favePlace} </p>
-                <p>Fun Fact: {User.funFact} </p> 
-              </li>
+                <p><strong>Country:</strong> {User.country} </p>
+                <p><strong>Age:</strong> {User.age} </p>
+                <p><strong>Favorite food:</strong> {User.faveFood} </p>
+                <p><strong>Favorite song:</strong> <a target="_blank" rel="noopener noreferrer" href={User.songLink}>{User.faveSong}</a> </p>
+                <p><strong>Favorite Location:</strong> {User.favePlace} </p>
+                <p><strong>Fun Fact:</strong> {User.funFact} </p> 
+              </div>
             );
           })
         }
-      </ul>
+      </div>
       </div>
       </div>
     );

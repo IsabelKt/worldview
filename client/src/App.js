@@ -23,7 +23,6 @@ class App extends Component {
     loaded: false,
     authenticated: false,
     loggedOut:false
-    
   };
 
   componentDidMount() {

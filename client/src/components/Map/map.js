@@ -40,6 +40,7 @@ window.location.assign(`/Country/${country.properties.name}`);
 <pattern id={"pattern_" + keyName.replace(/the /g,'').replace(/ /g,'')} x="100" y="5" width="95" height="67" patternUnits="userSpaceOnUse" key={i}>
 <image xlinkHref={flags[keyName].flag} x="0" y="0" width="100" height="100" />
 </pattern>
+// the replace is used above to make sure the name on the flags object matches the names displayed on the map 
 ))}
 </svg>
       {/* <NavBar></NavBar> */}

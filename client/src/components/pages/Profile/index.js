@@ -17,6 +17,7 @@ class Profile extends Component {
 
   render() {
     return (
+      <div className="container">
       <div className="card">
       <div className="card-header" style={{backgroundColor:"rgb(237, 252, 254)"}}><h1><strong><center>{this.state.results.name}</center></strong></h1></div>
       <div className="card-body">
@@ -31,6 +32,7 @@ class Profile extends Component {
         <h2><strong>Place:</strong> {this.state.results.favePlace}</h2>
         <h2><strong>Did you know?:</strong> {this.state.results.funFact}</h2>
       </div>
+    </div>
     </div>
     );
   }

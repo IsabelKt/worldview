@@ -21,7 +21,7 @@ class Country extends React.Component {
 //cards, with youtube link music(favmusic) instead of image, name, age and country
   render() {
     return (
-        <div>
+      <div className="container">
            <center><h1>{this.props.match.params.name}</h1></center>
         <div className="content" >
       <ul className="list-group" >

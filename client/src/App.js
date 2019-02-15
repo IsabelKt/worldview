@@ -11,12 +11,13 @@ import FProfile from "./components/pages/FProfile/index";
 import SignUp from "./components/pages/signup/SignUp";
 import Login from "./components/pages/Login/index";
 import ErrorPage from "./components/pages/Error/index";
+import Footer from "./components/pages/Footer/index";
 
 class App extends Component {
 
   divStyle = {
     backgroundColor: "#00000", 
-    height: "150%"
+    height: "100%"
   }
   state = {
     loaded: false,
@@ -54,7 +55,6 @@ class App extends Component {
   }
   return (
     <div style={this.divStyle}>
-      <div className="container">
         <Router>
           <div>
           <NavBar 
@@ -73,14 +73,14 @@ class App extends Component {
         <Route exact path="/fprofile/:_id" render={(props) => <FProfile {...props} current={this.state.authenticated}  setLogin={this.setLogin}/>} />
         <Route exact path="/signup" component={SignUp} />
         <Route path="/*"  component={ErrorPage} /> 
-        <div>
+        <div className="container">
         <BasicMap /> 
         </div>
         </Switch>     
+        <Footer />
       </div>
         </Router>
         </div>
-      </div>
     );
   }
 }

@@ -33,6 +33,7 @@ window.location.assign(`/Country/${country.properties.name}`);
 
   render() {
     return (
+      <div className="background">
       <div style={wrapperStyles}>
 <svg style={{width:"100%", height:"100%"}} >
 {Object.keys(flags).map((keyName, i) => (
@@ -83,6 +84,7 @@ window.location.assign(`/Country/${country.properties.name}`);
             </Geographies>
           </ZoomableGroup>
         </ComposableMap>
+      </div>
       </div>
     )
   }

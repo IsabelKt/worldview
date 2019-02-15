@@ -31,6 +31,7 @@ class FProfile extends React.Component {
 
   render() {
     return (
+      <div className="container">
       <div className="card">
       <div className="card-header" style={{backgroundColor:"rgb(237, 252, 254)"}}><h1><strong><center>{this.state.results.name}</center></strong></h1></div>
       <button 
@@ -38,7 +39,7 @@ class FProfile extends React.Component {
           onClick={this.follow}
           disabled={this.state.results.quantity <= 0}
         >
-          <h3>Follow</h3>
+          <h2>Follow  <i class="glyphicon glyphicon-plus"></i><i class="glyphicon glyphicon-user"></i></h2>
       </button>
       <div className="card-body">
         <img className="img-profile" alt={this.state.results.name} src={this.state.results.image} style={{width:"100%", marginBottom:"50px", boxShadow: "0 3px 6px #999, 0 3px 6px #999"}} />
@@ -52,6 +53,7 @@ class FProfile extends React.Component {
         <br />
        
       </div>
+    </div>
     </div>
     );
   }

@@ -18,14 +18,14 @@ function NavBar(props){
   if(props.nav) {
       link = <li className="nav-item">
         <Link to="/" className={window.location.pathname === "/map" ? "nav-link active": "nav-link"}> 
-     <h3><i class="glyphicon glyphicon-home"></i></h3>
+     <h3><i class="glyphicon glyphicon-globe"></i></h3>
       </Link> 
         </li>
   }
         if(props.nav) {
           link1 = <li className="nav-item">
             <Link to="/Feed" className={window.location.pathname === "/Feed" ? "nav-link active": "nav-link"}>
-           <h3><i class="glyphicon glyphicon-flag"></i>FRIENDS</h3>
+           <h3><i class="glyphicon glyphicon-user"></i><i class="glyphicon glyphicon-user"></i>FRIENDS</h3>
           </Link> 
             </li>
         }
@@ -46,14 +46,14 @@ function NavBar(props){
                 if(!props.nav) {
                   link5 = <li className="nav-item">
                      <Link to="/login" className={window.location.pathname === "/login" ? "nav-link active": "nav-link"} >
-                         <h3><i className="glyphicon glyphicon-user"></i>LOG IN</h3>
+                         <h3><i class="glyphicon glyphicon-log-in"></i>LOG IN</h3>
                   </Link> 
                     </li>
                 }
                 if(props.nav) {
                   link6 = <li className="nav-item">
                      <Link to="/login"  className={window.location.pathname === "/login" ? "nav-link active": "nav-link"}  onClick={props.handleLogOut}> 
-                      <h3><i class="glyphicon glyphicon-remove"></i>LOG OUT</h3>
+                      <h3><i class="glyphicon glyphicon-log-out"></i>LOG OUT</h3>
                   </Link> 
                     </li>
                 }
@@ -63,7 +63,7 @@ return(
     <ul className="navbar-nav mr-auto">
       <li className="nav-item ">
       <Link to="/" className={window.location.pathname === "/" ? "nav-link active": "nav-link"}> 
-      <img src={logo1wv} alt="world-view" style={{height:"20", width:"30"}} />
+      <img src={logo1wv} className="logo" alt="world-view" style={{height:"20", width:"30"}} />
   
     </Link> 
       </li>
@@ -73,7 +73,7 @@ return(
       <li> {link3}</li>
       <li> {link4}</li>
       <li> {link5}</li>
-      <li> {link6}</li>
+      <li className="logout"> {link6}</li>
     </ul>
 </nav>
 </div>

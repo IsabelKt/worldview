@@ -50,6 +50,7 @@ class Login extends Component {
             </div>
             <div className="col-md-4 text-center">
               <img className="image-logo" src={logo} alt=""/>
+              <h1>Welcome</h1>
               <form className="login-form">
                 <input
                   className="form-control"
@@ -71,7 +72,6 @@ class Login extends Component {
                 <span>{this.state.error}</span>
               </form>
               <p class="mt-3"><small>Need an account? <a href="/signup">Create your account here.</a></small></p>
-              <p class="mt-5 mb-3 text muted"><a href="/">World View</a> &copy; 2019</p>
             </div>
             <div className="col-md-4">
             </div>

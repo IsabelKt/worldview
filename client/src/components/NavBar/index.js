@@ -18,7 +18,7 @@ function NavBar(props){
   if(props.nav) {
       link = <li className="nav-item">
         <Link to="/" className={window.location.pathname === "/map" ? "nav-link active": "nav-link"}> 
-     <h3><i class="glyphicon glyphicon-globe"></i></h3>
+     <h3><i class="glyphicon glyphicon-globe">MAP</i></h3>
       </Link> 
         </li>
   }
@@ -51,7 +51,7 @@ function NavBar(props){
                     </li>
                 }
                 if(props.nav) {
-                  link6 = <li className="nav-item">
+                  link6 = <li className="nav-item ">
                      <Link to="/login"  className={window.location.pathname === "/login" ? "nav-link active": "nav-link"}  onClick={props.handleLogOut}> 
                       <h3><i class="glyphicon glyphicon-log-out"></i>LOG OUT</h3>
                   </Link> 
@@ -61,7 +61,7 @@ return(
     <div>
      <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark">
     <ul className="navbar-nav mr-auto">
-      <li className="nav-item ">
+      <li className="nav-item">
       <Link to="/" className={window.location.pathname === "/" ? "nav-link active": "nav-link"}> 
       <img src={logo1wv} className="logo" alt="world-view" style={{height:"20", width:"30"}} />
   
@@ -73,8 +73,11 @@ return(
       <li> {link3}</li>
       <li> {link4}</li>
       <li> {link5}</li>
-      <li className="logout"> {link6}</li>
     </ul>
+    <ul className ="nav">
+    <li> {link6}</li>
+    </ul>
+    
 </nav>
 </div>
 );

@@ -1,6 +1,6 @@
 .nav-item{
     margin-left: 50px;
-    width: 100%;
+    width: 107%;
 } 
 .navbar{
     width: 100%;
@@ -20,7 +20,7 @@
 img.logo{
     height: 70px;
     width: 350px;
-    margin-left: 50px;
+    margin-left: -99px;
 }
 h3{
     font-family: "Catamaran", sans-serif;
@@ -29,9 +29,16 @@ h3{
 }
 .nav-link{
     margin-left: 60px;
+    color: white;
 }
 
 i{
   font-size: 25px;
 }
 
+.nav{
+    float: right;
+    margin-bottom: 26px;
+   
+    margin-right:90px; 
+}

@@ -1,3 +1,13 @@
-/* h2 {
-    color: #22aade
-}; */
+.footer{
+    float: bottom;
+}
+.content{
+    font-size: 15px;
+    height: 350px;
+    position: relative;
+}
+
+.profile{
+    min-height: 100%
+}
+

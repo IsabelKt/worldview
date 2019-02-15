@@ -26,6 +26,20 @@
 
 }
 
-.postcard{
-    background-image: url("../background.jpg")
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    float: bottom;
+   }
+   
+   .content{
+    font-size: 15px;
+    height: 350px;
+    position: relative;
 }
+   .container{
+     min-height:70vh;
+     overflow: auto;
+    
+   }

@@ -1,11 +1,13 @@
 .footer {
-    background-color:#22aade;
+      background-color:#22aade;
       height: 100px;
-      position: relative;
       color: white;
       overflow: auto;
+      position:absolute;
+      bottom:0;
+      width:100%;
   }
-  
+
   .footer span {
     bottom: 20px;
     left: 0;
@@ -13,13 +15,9 @@
     padding: 3px;
     text-align: center;
     font-size: 25px;
-    position:absolute;
-    bottom:0;
-    width:100%;
-    height:60px;   /* Height of the footer */
-    background:#6cf;
-    margin-top: 70%
+    position: absolute;
   }
+
 
   .href{
     color: white;

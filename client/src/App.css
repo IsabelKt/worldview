@@ -33,7 +33,7 @@ h1 {
 
 h2, p{
   font-family: 'Didact Gothic', sans-serif;
-  margin-top: 5px;
+  margin-top: 3px;
 }
 
 h2{
@@ -62,3 +62,14 @@ input{
 }
 
 /* border-color: #a1d6ff; */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+ }
+
+ .container{
+   min-height:70vh;
+   overflow: auto;
+  
+ }
